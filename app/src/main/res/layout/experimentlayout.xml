@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/recbound"
+android:layout_margin="5dp"
+android:padding="10dp"
+android:paddingBottom="2dp"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:text="0.0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:gravity="right"
+    android:layout_alignBottom="@+id/textView5"
+    android:layout_alignLeft="@+id/textViewDeliveryCharge"
+    android:layout_alignStart="@+id/textViewDeliveryCharge"
+    android:id="@+id/textViewTaxAmount"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="0.25dp"
+    android:layout_marginTop="8dp"
+    android:background="#c0c0c0"
+    android:layout_below="@+id/textView5"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:text="Total : "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:textSize="17sp"
+    android:textColor="@color/black"
+    android:id="@+id/textViewAmountText"
+    android:layout_below="@+id/textView5"
+    android:layout_alignLeft="@+id/textView5"
+    android:layout_alignStart="@+id/textView5" />
+
+<TextView
+    android:layout_width="100dp"
+    android:textSize="17sp"
+    android:gravity="right"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:id="@+id/textViewAmount"
+    android:layout_alignBottom="@+id/textViewAmountText"
+    android:layout_alignLeft="@+id/textViewTaxAmount"
+    android:layout_alignStart="@+id/textViewTaxAmount"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:text="Sub Total : "
+    android:textSize="15sp"
+    android:id="@+id/textview1"
+    android:textColor="@color/black"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:text="ghj"
+    android:textSize="15sp"
+    android:layout_width="180dp"
+    android:gravity="right"
+    android:layout_alignRight="@+id/textview1"
+    android:layout_height="wrap_content"
+    android:id="@+id/textViewSubAmount"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<TextView
+    android:text="Delivery Charges : "
+    android:textSize="14sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView3"
+    android:layout_below="@+id/textview1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:text="Taxes : "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:id="@+id/textView5"
+    android:layout_below="@+id/textView3"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:text="0.0"
+    android:layout_width="wrap_content"
+    android:textSize="14sp"
+    android:gravity="right"
+    android:layout_height="wrap_content"
+    android:id="@+id/textViewDeliveryCharge"
+    android:layout_below="@+id/textViewSubAmount"
+    android:layout_alignLeft="@+id/textViewSubAmount"
+    android:layout_alignStart="@+id/textViewSubAmount"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+</RelativeLayout>

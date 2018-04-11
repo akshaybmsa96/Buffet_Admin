@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/recbound"
+    android:paddingLeft="5dp"
+    android:layout_margin="3dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Customer Name"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#424242"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCustomerName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Amount : 7694.96"
+        android:layout_width="wrap_content"
+        android:textColor="#607D8B"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAmount"
+        android:layout_below="@+id/textViewAddress"
+        android:textSize="14sp"
+         />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="match_parent"
+        android:textColor="#607D8B"
+        android:paddingTop="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAddress"
+        android:layout_below="@+id/textViewCustomerName"
+        android:textSize="14sp"
+        android:layout_toStartOf="@+id/textViewODate" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_call"
+        android:id="@+id/imageViewCall"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/textViewAmount"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="5 Items "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNumberOfItems"
+        android:paddingTop="2dp"
+        android:textColor="#607D8B"
+        android:textSize="12sp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/textViewAddress"
+        android:layout_toEndOf="@+id/textViewAddress" />
+
+    <TextView
+        android:text="Order Date :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewODate"
+        android:textColor="#607D8B"
+        android:textSize="12sp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/textViewCustomerName"
+        android:layout_alignBottom="@+id/textViewCustomerName"
+        android:layout_toStartOf="@+id/imageViewCall" />
+
+</RelativeLayout>
